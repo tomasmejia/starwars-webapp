@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import swlogo from './starwarslogo.svg';
 import './App.css';
+import './People.js'
 import 'tachyons';
 
 class App extends Component {

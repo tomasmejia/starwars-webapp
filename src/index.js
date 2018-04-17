@@ -10,6 +10,7 @@ ReactDOM.render(
         <App />
         <People />
         <People />
+        <People />
                 </div>
     , document.getElementById('root'));
 registerServiceWorker();

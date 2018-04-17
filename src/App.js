@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
 import swlogo from './starwarslogo.svg';
 import './App.css';
+import 'tachyons';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={swlogo} className="sw-logo" alt="logo" />
-          <h1 className="App-title">Star Wars API fetching</h1>
+      <div>
+        <header className="bg-near-black helvetica">
+          <div class="pa4 pt5-ns">
+            <img src={swlogo} className="sw-logo ma3" alt="Yellow Starwars Logo" />
+            <h3 className="f-headline-m f-headline-ns f-headline-l measure-narrow mv0 center-ns">
+              <span className="bg-yellow lh-copy pa1 tracked-tight">Star Wars API fetching</span>
+            </h3>
+          </div>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="pa4 georgia tj">
+          <p className="f5 f3-ns lh-copy measure sans-serif">
+            Simple web app that fetches a random chunk of a character's data from the Star Wars API and displays it.
+            There isn't much else in the APP, but it's a big step from me since it's my first Web App using React + APIs.
+          </p>
+        </div>
       </div>
     );
   }

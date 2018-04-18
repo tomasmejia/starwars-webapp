@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PeopleList from './PeopleList';
+import { chars } from './chars';
 
 class App extends Component {
   render() {
@@ -13,10 +15,13 @@ class App extends Component {
         </header>
         <div className="pa4 georgia tj">
           <p className="f5 f3-ns lh-copy measure sans-serif">
-            Simple web app that fetches a random chunk of a character's data from the Star Wars API and displays it.
+            Simple webapp that fetches a random chunk of a character's data from the Star Wars API and displays it.
             There isn't much else in the APP, but it's a big step from me since it's my first Web App using React + APIs.
           </p>
         </div>
+        <div>
+          <PeopleList chars={chars} />
+        </div>        
       </div>
     );
   }

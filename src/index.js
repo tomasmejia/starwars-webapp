@@ -10,7 +10,6 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(
                 <div>
                   <App />
-                  <PeopleList chars={chars} />
                 </div>
     , document.getElementById('root'));
 registerServiceWorker();

@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-import swlogo from './starwarslogo.svg';
-import './App.css';
-import 'tachyons';
 
 class App extends Component {
   render() {
     return (
       <div>
         <header className="bg-near-black helvetica">
-          <div class="pa4 pt5-ns">
-            <img src={swlogo} className="sw-logo ma3" alt="Yellow Starwars Logo" />
+          <div class="pa3">
             <h3 className="f-headline-m f-headline-ns f-headline-l measure-narrow mv0 center-ns">
               <span className="bg-yellow lh-copy pa1 tracked-tight">Star Wars API fetching</span>
             </h3>

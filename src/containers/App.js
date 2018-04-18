@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PeopleList from './PeopleList';
+import PeopleList from '../components/PeopleList';
 
 class App extends Component {
   constructor() {
@@ -11,10 +11,12 @@ class App extends Component {
 
   componentDidMount() {
 
-
+    // async await fetching
     const fetchPeople = async () => {
       const response = await fetch('https://swapi.co/api/people/');
       const chars = await response.json();
+      // SWAPI has the information needed inside inside the results object array
+      // because it's a big object with the information nested inside.
       return this.setState({ chars: chars.results});
       }    
 

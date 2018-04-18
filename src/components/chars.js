@@ -24,3 +24,5 @@ export const chars = [
         height: '185'
     }
 ];
+
+//not used anymore, just worked as placeholder

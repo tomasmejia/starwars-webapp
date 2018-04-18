@@ -1,6 +1,7 @@
 import React from 'react';
 import People from './People';
 
+// it will loop through each element and return the people component each time
 
 const PeopleList = ({ chars }) => {
     return (

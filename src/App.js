@@ -3,11 +3,29 @@ import PeopleList from './PeopleList';
 import { chars } from './chars';
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+        chars: chars
+      }
+  }
+
+  componentDidMount() {
+
+    // const fetchPeople = async () => {
+    //   const response = await fetch('https://swapi.co/api/people/');
+    //   const chars = await response.json();
+    //   return this.setState({ chars: chars});
+    //   }    
+
+    //   fetchPeople();
+  }
+
   render() {
     return (
       <div>
         <header className="bg-near-black helvetica">
-          <div class="pa3">
+          <div className="pa3">
             <h3 className="f-headline-m f-headline-ns f-headline-l measure-narrow mv0 center-ns">
               <span className="bg-yellow lh-copy pa1 tracked-tight">Star Wars API fetching</span>
             </h3>
@@ -20,7 +38,7 @@ class App extends Component {
           </p>
         </div>
         <div>
-          <PeopleList chars={chars} />
+          <PeopleList chars={this.state.chars} />
         </div>        
       </div>
     );

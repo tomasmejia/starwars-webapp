@@ -9,7 +9,7 @@ const PeopleList = ({ chars }) => {
               chars.map((char, i) => {
                 return (
                   <People
-                    id={chars[i].id}
+                    key={chars[i].id}
                     name={chars[i].name}
                     gender={chars[i].gender}
                     height={chars[i].height}

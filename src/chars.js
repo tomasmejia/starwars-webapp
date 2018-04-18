@@ -1,25 +1,25 @@
 export const chars = [
     {
         id: 1,
-        name: 'Devorah Meltrozo',
+        name: 'John Doe',
         gender: 'Male',
         height: '180'
     },
     {
         id: 2,
-        name: 'Solomeo Paredes',
+        name: 'Mary Jane',
         gender: 'Female',
         height: '160'
     },
     {
         id: 3,
-        name: 'Benito Camela',
+        name: 'Robert DeNilo',
         gender: 'Male',
         height: '175'
     },
     {
         id: 4,
-        name: 'Solomeo Casalta',
+        name: 'Tommy Hawks',
         gender: 'Male',
         height: '185'
     }

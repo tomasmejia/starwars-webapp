@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import PeopleList from './PeopleList';
-import { chars } from './chars';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-        chars: chars
+        chars: []
       }
   }
 
   componentDidMount() {
 
-    // const fetchPeople = async () => {
-    //   const response = await fetch('https://swapi.co/api/people/');
-    //   const chars = await response.json();
-    //   return this.setState({ chars: chars});
-    //   }    
 
-    //   fetchPeople();
+    const fetchPeople = async () => {
+      const response = await fetch('https://swapi.co/api/people/');
+      const chars = await response.json();
+      return this.setState({ chars: chars.results});
+      }    
+
+      fetchPeople();
   }
 
   render() {
